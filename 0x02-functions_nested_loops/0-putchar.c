@@ -1,15 +1,19 @@
-#include <stdio.h>
+#include "main.h"
+/**
+ * main - Prints _putchar followed by new line.
+ *
+ * Return: Always 0 (Success)
+ */
 
-int main()
+int main(void)
 {
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
-	putchar('\n');
-	return 0;
+	char word[] = "_putchar\n";
+	int char_counter = 0;
+
+	while (char_counter < 9)
+	{
+		_putchar(word[char_counter]);
+		char_counter++;
+	}
+	return (0);
 }
